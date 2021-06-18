@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Integração MOVIEdb</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>MaiFilmes - MovieDB API</h3>
+        <ul>
+          <li><a href="./index.html">Home Page</a></li>
+          <li><a href="/">Pesquisar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 searchbar">
+          <input id="searchInput" type="text" placeholder="Digite sua busca" />
+          <button class="btn btn-primary" onclick="fetchSearchMovies()">
+            Pesquisar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="bodybox" class="row">
+        <h1>Pesquise seu filme favorito. . .</h1>
+      </div>
+    </div>
+
+    <script src="../scripts/pesquisarscript.js"></script>
+  </body>
+</html>
